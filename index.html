@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-it Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 1. 중앙 제목 -->
+        <h1>Todo List</h1>
+
+        <!-- 2. 중앙 입력창 세트 -->
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Write the Task..">
+            <input type="text" id="categoryInput" placeholder="Write the Category..">
+            <button onclick="addTodo()">Add</button>
+        </div>
+
+        <!-- 3. 포스트잇 카드 보드 -->
+        <div id="output"></div>
+    </div>
+
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
